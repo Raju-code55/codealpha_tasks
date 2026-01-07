@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+    <div class="gallery-item nature"><img src="https://picsum.photos/id/1018/600/400"></div>
+    <div class="gallery-item city"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnlI4X2Lx44HXLL44tDhnLxKyNJhOo0hod6g&s"></div>
+    <div class="gallery-item animals"><img src="https://res.cloudinary.com/enchanting/q_70,f_auto,w_1000,h_666,c_fit/exodus-web/2024/01/shutterstock_2068599128-1.jpg"></div>
+    <div class="gallery-item nature"><img src="https://picsum.photos/id/1015/600/400"></div>
+    <div class="gallery-item city"><img src="https://img.freepik.com/free-photo/los-angeles-downtown-buildings-night_649448-298.jpg?semt=ais_hybrid&w=740&q=80"></div>
+    <div class="gallery-item animals"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEESg-wFHXzJ-SE-0ZeIWm7uTWxpXDTL2ug&s"></div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <span class="prev" onclick="changeImage(-1)">❮</span>
+    <img id="lightbox-img">
+    <span class="next" onclick="changeImage(1)">❯</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
